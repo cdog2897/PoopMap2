@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PoopMap2.Views.LoginView"
+             xmlns:viewmodel="clr-namespace:PoopMap2.ViewModels.Login"
+             x:DataType="viewmodel:LoginViewModel"
+             Title="LoginView">
+
+
+    <StackLayout Padding="20" Spacing="20">
+        <Entry x:Name="Username" Placeholder="Username" Keyboard="Text" />
+        <Entry x:Name="Password" Placeholder="Password" Keyboard="Text" IsPassword="True" />
+        <Button Text="Login" Clicked="LoginBtn_Clicked"/>
+        <Button Text="Register"/>
+    </StackLayout>
+
+
+</ContentPage>
