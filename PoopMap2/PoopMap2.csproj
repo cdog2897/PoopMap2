@@ -68,6 +68,9 @@
 	  <None Remove="Views\Home\" />
 	  <None Remove="Views\Login\" />
 	  <None Remove="Services\" />
+	  <None Remove="ViewModels\Home\" />
+	  <None Remove="Resources\Images\logout.svg" />
+	  <None Remove="ViewModels\PoopMap\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
@@ -77,5 +80,11 @@
 	  <Folder Include="Views\Home\" />
 	  <Folder Include="Views\Login\" />
 	  <Folder Include="Services\" />
+	  <Folder Include="ViewModels\Home\" />
+	  <Folder Include="ViewModels\PoopMap\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Images\logout.svg" />
+	  <BundleResource Include="Resources\Images\logout.svg" />
 	</ItemGroup>
 </Project>

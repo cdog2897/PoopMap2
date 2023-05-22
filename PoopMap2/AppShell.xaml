@@ -12,10 +12,20 @@
         ContentTemplate="{DataTemplate local:LoginView}"
         Route="LoginView" />
 
-    <ShellContent
+    <TabBar>
+            <ShellContent
         Title="MainPage"
         ContentTemplate="{DataTemplate local:MainPageView}"
         Route="MainPageView" />
+
+        <ShellContent
+        Title="Profile"
+        ContentTemplate="{DataTemplate local:ProfileView}"
+        Route="ProfileView" />
+        
+
+    </TabBar>
+
 
 
 </Shell>
