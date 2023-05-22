@@ -13,8 +13,8 @@
         Route="LoginView" />
 
     <ShellContent
-        Title="Login"
-        ContentTemplate="{DataTemplate local:LoginView}"
+        Title="MainPage"
+        ContentTemplate="{DataTemplate local:MainPageView}"
         Route="MainPageView" />
 
 

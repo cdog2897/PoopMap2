@@ -57,6 +57,7 @@
 		<PackageReference Include="Realm" Version="11.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="MongoDB.Bson" Version="2.19.1" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="5.1.0" />
 	</ItemGroup>
 
 	<ItemGroup>

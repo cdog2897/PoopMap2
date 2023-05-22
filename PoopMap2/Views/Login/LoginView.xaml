@@ -3,15 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PoopMap2.Views.LoginView"
              xmlns:viewmodel="clr-namespace:PoopMap2.ViewModels.Login"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:DataType="viewmodel:LoginViewModel"
              Title="LoginView">
 
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior
+            EventName="Appearing"
+            Command="{Binding AppearingCommand}" />
+    </ContentPage.Behaviors>
+
 
     <StackLayout Padding="20" Spacing="20">
-        <Entry x:Name="Username" Placeholder="Username" Keyboard="Text" />
-        <Entry x:Name="Password" Placeholder="Password" Keyboard="Text" IsPassword="True" />
-        <Button Text="Login" Clicked="LoginBtn_Clicked"/>
-        <Button Text="Register"/>
+        <Entry x:Name="Username" Placeholder="Username" Keyboard="Text" Text="{Binding Username}"/>
+        <Entry x:Name="Password" Placeholder="Password" Keyboard="Text" IsPassword="True"  Text="{Binding Password}"/>
+        <Button Text="Login" Command="{Binding LoginCommand}"/>
+
+        <Label Text="New User? Click here to create an account.">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding SignUpRedirectCommand}"/>
+            </Label.GestureRecognizers>
+
+        </Label>
     </StackLayout>
 
 

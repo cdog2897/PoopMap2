@@ -1,6 +1,8 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Logging;
 using PoopMap2.ViewModels.Login;
 using PoopMap2.Views;
+using PoopMap2.Views.Login;
 
 namespace PoopMap2;
 
@@ -11,7 +13,8 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-			.ConfigureFonts(fonts =>
+            .UseMauiCommunityToolkit()
+            .ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
@@ -19,6 +22,8 @@ public static class MauiProgram
 
 		builder.Services.AddSingleton<LoginView>();
 		builder.Services.AddSingleton<LoginViewModel>();
+		builder.Services.AddSingleton<RegisterView>();
+		builder.Services.AddSingleton<RegisterViewModel>();
 
 #if DEBUG
 		builder.Logging.AddDebug();
