@@ -46,13 +46,13 @@
 
 
 
-        <!--<StackLayout Orientation="Horizontal" x:Name="starContainer" Grid.Row="2" HorizontalOptions="Center">
-            <ImageButton x:Name="img1" Source="star_full.jpeg" WidthRequest="65" Clicked="img1_Clicked" VerticalOptions="End"/>
-            <ImageButton x:Name="img2" Source="star_empy.jpeg" WidthRequest="65" Clicked="img2_Clicked" VerticalOptions="End"/>
-            <ImageButton x:Name="img3" Source="star_empy.jpeg" WidthRequest="65" Clicked="img3_Clicked" VerticalOptions="End"/>
-            <ImageButton x:Name="img4" Source="star_empy.jpeg" WidthRequest="65" Clicked="img4_Clicked" VerticalOptions="End"/>
-            <ImageButton x:Name="img5" Source="star_empy.jpeg" WidthRequest="65" Clicked="img5_Clicked" VerticalOptions="End"/>
-        </StackLayout>-->
+        <StackLayout Orientation="Horizontal" x:Name="starContainer" Grid.Row="2" HorizontalOptions="Center">
+            <ImageButton x:Name="img1" Source="star_full.jpeg" WidthRequest="65"  VerticalOptions="End"/>
+            <ImageButton x:Name="img2" Source="star_empy.jpeg" WidthRequest="65"  VerticalOptions="End"/>
+            <ImageButton x:Name="img3" Source="star_empy.jpeg" WidthRequest="65"  VerticalOptions="End"/>
+            <ImageButton x:Name="img4" Source="star_empy.jpeg" WidthRequest="65"  VerticalOptions="End"/>
+            <ImageButton x:Name="img5" Source="star_empy.jpeg" WidthRequest="65"  VerticalOptions="End"/>
+        </StackLayout>
 
 
         <!--<Entry x:Name="PoopDescription"
