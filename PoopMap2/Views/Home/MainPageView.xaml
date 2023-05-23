@@ -16,10 +16,10 @@
     <Grid Margin="30, 0, 30, 0">
         <Grid.RowDefinitions>
             <RowDefinition Height="80" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="120" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="90" />
             <RowDefinition Height="70" />
-            <RowDefinition Height="70" />
+            <RowDefinition Height="100" />
             <RowDefinition Height="200" />
 
         </Grid.RowDefinitions>
@@ -49,12 +49,13 @@
 
 
         <StackLayout Orientation="Horizontal" x:Name="starContainer" Grid.Row="2" HorizontalOptions="Center">
-            <ImageButton x:Name="img1" Source="star_full.jpeg" WidthRequest="65"  VerticalOptions="End"/>
-            <ImageButton x:Name="img2" Source="star_empy.jpeg" WidthRequest="65"  VerticalOptions="End"/>
-            <ImageButton x:Name="img3" Source="star_empy.jpeg" WidthRequest="65"  VerticalOptions="End"/>
-            <ImageButton x:Name="img4" Source="star_empy.jpeg" WidthRequest="65"  VerticalOptions="End"/>
-            <ImageButton x:Name="img5" Source="star_empy.jpeg" WidthRequest="65"  VerticalOptions="End"/>
+            <ImageButton x:Name="img1" Source="{Binding Img1}" WidthRequest="60" Margin="1" Command="{Binding img1_ClickedCommand}"/>
+            <ImageButton x:Name="img2" Source="{Binding Img2}" WidthRequest="60" Margin="1" Command="{Binding img2_ClickedCommand}"/>
+            <ImageButton x:Name="img3" Source="{Binding Img3}" WidthRequest="60" Margin="1" Command="{Binding img3_ClickedCommand}"/>
+            <ImageButton x:Name="img4" Source="{Binding Img4}" WidthRequest="60" Margin="1" Command="{Binding img4_ClickedCommand}"/>
+            <ImageButton x:Name="img5" Source="{Binding Img5}" WidthRequest="60" Margin="1" Command="{Binding img5_ClickedCommand}"/>
         </StackLayout>
+
 
 
         <Entry x:Name="PoopDescription"
@@ -64,22 +65,23 @@
                    Grid.Row="3"
                 />
 
-        <Frame BorderColor="Brown" Grid.Row="5" WidthRequest="200" Padding="10">
-            <!--<cv:CameraView
+        <!--<Frame BorderColor="Brown" Grid.Row="4" WidthRequest="200" Padding="10">
+            <cv:CameraView
                     x:Name="cameraView"
                     CamerasLoaded="cameraView_CamerasLoaded"
-                    />-->
-        </Frame>
+                    />
+        </Frame>-->
 
 
         <ImageButton
-            Scale="1"
+            Margin="20"
                 Source="drop_button.png"
                 HorizontalOptions="Center"
-                        Grid.Row="4">
+            Grid.Row="4"
+                        >
             <ImageButton.Shadow>
                 <Shadow Brush="Black"
-                Offset="1,1"
+                Offset=".5,.5"
                 Opacity="0.8" />
             </ImageButton.Shadow>
         </ImageButton>

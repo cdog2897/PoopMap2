@@ -39,7 +39,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg"/>
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
@@ -79,6 +79,8 @@
 	  <None Remove="Resources\Images\star_full.jpeg" />
 	  <None Remove="Resources\Images\star_empy.jpeg" />
 	  <None Remove="Resources\Images\poopmap2.png" />
+	  <None Remove="Resources\Images\poop_empty.png" />
+	  <None Remove="Resources\Images\poop_full.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
@@ -103,5 +105,9 @@
 	  <BundleResource Include="Resources\Images\star_empy.jpeg" />
 	  <BundleResource Include="Resources\Images\star_empy.jpeg" />
 	  <BundleResource Include="Resources\Images\star_full.jpeg" />
+	  <BundleResource Include="Resources\Images\poop_empty.png" />
+	  <BundleResource Include="Resources\Images\poop_empty.png" />
+	  <BundleResource Include="Resources\Images\poop_empty.png" />
+	  <BundleResource Include="Resources\Images\poop_full.png" />
 	</ItemGroup>
 </Project>
