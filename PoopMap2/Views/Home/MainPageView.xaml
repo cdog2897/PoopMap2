@@ -4,6 +4,7 @@
              x:Class="PoopMap2.Views.MainPageView"
              xmlns:viewmodel="clr-namespace:PoopMap2.ViewModels.Home"
              x:DataType="viewmodel:MainPageViewModel"
+             Title=""
              >
 
 
@@ -25,15 +26,16 @@
 
 
 
-        <BoxView Color="LightCoral" Grid.Column="2"></BoxView>
+        <!--<BoxView Color="LightCoral" Grid.Column="2"></BoxView>
         <BoxView Color="LightBlue" Grid.Row="1"></BoxView>
         <BoxView Color="LightGreen" Grid.Row="2"></BoxView>
         <BoxView Color="LightSalmon" Grid.Row="3"></BoxView>
         <BoxView Color="LightGray" Grid.Row="4"></BoxView>
-        <BoxView Color="LightCyan" Grid.Row="5"></BoxView>
+        <BoxView Color="LightCyan" Grid.Row="5"></BoxView>-->
 
         <Image
-                Source="poopmap.png"
+                Source="poopmap_logo.png"
+                Scale="2"
                 HorizontalOptions="Center"/>
 
         <Label
@@ -55,28 +57,32 @@
         </StackLayout>
 
 
-        <!--<Entry x:Name="PoopDescription"
+        <Entry x:Name="PoopDescription"
                            Margin="10"
                 Placeholder="Enter a Description"
                    MaxLength="40"
                    Grid.Row="3"
-                />-->
+                />
 
-        <!--<Frame BorderColor="Brown" Grid.Row="5" WidthRequest="200" Padding="10">
-            <cv:CameraView
+        <Frame BorderColor="Brown" Grid.Row="5" WidthRequest="200" Padding="10">
+            <!--<cv:CameraView
                     x:Name="cameraView"
                     CamerasLoaded="cameraView_CamerasLoaded"
-                    />
-        </Frame>-->
+                    />-->
+        </Frame>
 
 
-        <!--<Button
-            Margin="10"
-                x:Name="CounterBtn"
-                Text="Drop Poop"
-                Clicked="DropPoop_Clicked"
+        <ImageButton
+            Scale="1"
+                Source="drop_button.png"
                 HorizontalOptions="Center"
-                        Grid.Row="4"/>-->
+                        Grid.Row="4">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="1,1"
+                Opacity="0.8" />
+            </ImageButton.Shadow>
+        </ImageButton>
 
     </Grid>
 
