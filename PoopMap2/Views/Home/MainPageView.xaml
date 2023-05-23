@@ -4,16 +4,81 @@
              x:Class="PoopMap2.Views.MainPageView"
              xmlns:viewmodel="clr-namespace:PoopMap2.ViewModels.Home"
              x:DataType="viewmodel:MainPageViewModel"
-             Title="MainPageView">
+             >
+
+
 
     <ContentPage.ToolbarItems>
-         <ToolbarItem Text="Logout" Order="Primary" IconImageSource="logout.png" Command="{Binding LogoutCommand}"/>
+        <ToolbarItem Text="Logout" Order="Primary" IconImageSource="logout.png" Command="{Binding LogoutCommand}"/>
     </ContentPage.ToolbarItems>
 
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid Margin="30, 0, 30, 0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="120" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="200" />
+
+        </Grid.RowDefinitions>
+
+
+
+        <BoxView Color="LightCoral" Grid.Column="2"></BoxView>
+        <BoxView Color="LightBlue" Grid.Row="1"></BoxView>
+        <BoxView Color="LightGreen" Grid.Row="2"></BoxView>
+        <BoxView Color="LightSalmon" Grid.Row="3"></BoxView>
+        <BoxView Color="LightGray" Grid.Row="4"></BoxView>
+        <BoxView Color="LightCyan" Grid.Row="5"></BoxView>
+
+        <Image
+                Source="poopmap.png"
+                HorizontalOptions="Center"/>
+
+        <Label
+                Text="Rate your poop: "
+                FontSize="18"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="Center"
+                                Grid.Row="1"/>
+
+
+
+        <!--<StackLayout Orientation="Horizontal" x:Name="starContainer" Grid.Row="2" HorizontalOptions="Center">
+            <ImageButton x:Name="img1" Source="star_full.jpeg" WidthRequest="65" Clicked="img1_Clicked" VerticalOptions="End"/>
+            <ImageButton x:Name="img2" Source="star_empy.jpeg" WidthRequest="65" Clicked="img2_Clicked" VerticalOptions="End"/>
+            <ImageButton x:Name="img3" Source="star_empy.jpeg" WidthRequest="65" Clicked="img3_Clicked" VerticalOptions="End"/>
+            <ImageButton x:Name="img4" Source="star_empy.jpeg" WidthRequest="65" Clicked="img4_Clicked" VerticalOptions="End"/>
+            <ImageButton x:Name="img5" Source="star_empy.jpeg" WidthRequest="65" Clicked="img5_Clicked" VerticalOptions="End"/>
+        </StackLayout>-->
+
+
+        <!--<Entry x:Name="PoopDescription"
+                           Margin="10"
+                Placeholder="Enter a Description"
+                   MaxLength="40"
+                   Grid.Row="3"
+                />-->
+
+        <!--<Frame BorderColor="Brown" Grid.Row="5" WidthRequest="200" Padding="10">
+            <cv:CameraView
+                    x:Name="cameraView"
+                    CamerasLoaded="cameraView_CamerasLoaded"
+                    />
+        </Frame>-->
+
+
+        <!--<Button
+            Margin="10"
+                x:Name="CounterBtn"
+                Text="Drop Poop"
+                Clicked="DropPoop_Clicked"
+                HorizontalOptions="Center"
+                        Grid.Row="4"/>-->
+
+    </Grid>
+
+
 </ContentPage>
