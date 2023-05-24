@@ -14,7 +14,7 @@ namespace PoopMap2.ViewModels.Home
         [ObservableProperty]
 		public string img1 = "poop_full.png";
         [ObservableProperty]
-        public string img2 = "poop_full.png";
+        public string img2 = "poop_empty.png";
         [ObservableProperty]
         public string img3 = "poop_empty.png";
         [ObservableProperty]

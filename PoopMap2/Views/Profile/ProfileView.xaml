@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="PoopMap2.Views.ProfileView"
+             Title="ProfileView">
+
+        <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior
+            EventName="Appearing"
+            Command="{Binding AppearingCommand}" />
+    </ContentPage.Behaviors>
+
+    <Grid Margin="30, 10, 30, 0" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+
+
+        <StackLayout>
+            <Image Source="dotnet_bot.png" HeightRequest="100"/>
+        </StackLayout>
+
+
+        <Label FontSize="18" Text="{Binding Username}" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="20, 10, 0, 0"/>
+
+        <Label Text="{Binding Bio}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" LineBreakMode="WordWrap" Margin="20, 0, 0, 0"/>
+
+        <StackLayout Grid.Row="3" HorizontalOptions="Center">
+            <Label Text="{Binding Poops}" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center"/>
+            <Label Text="Poops" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="3" Grid.Column="1" HorizontalOptions="Center">
+            <Label Text="{Binding Followers}" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center"/>
+            <Label Text="Followers" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="3" Grid.Column="2" HorizontalOptions="Center">
+            <Label Text="{Binding Following}" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding Following_ClickedCommand}"/>
+                </Label.GestureRecognizers>
+                </Label>
+            <Label Text="Following" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <Button Text="Edit Profile" Grid.Row="4" Grid.ColumnSpan="3" Margin="5"/>
+        <Button Text="All Users" Grid.Row="5" Grid.ColumnSpan="3" Margin="5" Command="{Binding AllUsersCommand}"/>
+        <Button Text="Logout" Grid.Row="6" Grid.ColumnSpan="3" Margin="5" Command="{Binding LogoutCommand}"/>
+
+    </Grid>
+
+
+
+</ContentPage>

@@ -181,7 +181,7 @@ namespace PoopMap2.Services
             });
         }
 
-        public static async void FollowUser(string thisUserId, string userToFollowId)
+        public static async Task FollowUser(string thisUserId, string userToFollowId)
         {
             var thisUser = DAO.GetUserById(thisUserId);
 
@@ -200,7 +200,7 @@ namespace PoopMap2.Services
             return results;
         }
 
-        public static async void UnfollowUser(string thisUserId, string userToUnfollow)
+        public static async Task UnfollowUser(string thisUserId, string userToUnfollow)
         {
             var thisUser = DAO.GetUserById(thisUserId);
             List<string> following = JsonConvert.DeserializeObject<List<string>>(thisUser.Following);

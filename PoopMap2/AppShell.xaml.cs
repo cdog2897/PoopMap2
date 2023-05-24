@@ -1,4 +1,5 @@
-﻿using PoopMap2.Views;
+﻿using PoopMap2.ViewModels.Profile;
+using PoopMap2.Views;
 using PoopMap2.Views.Login;
 
 namespace PoopMap2;
@@ -9,9 +10,10 @@ public partial class AppShell : Shell
 	{
 		InitializeComponent();
 
-       // Routing.RegisterRoute(nameof(MainPageView), typeof(MainPageView));
 		Routing.RegisterRoute(nameof(RegisterView), typeof(RegisterView));
-		//Routing.RegisterRoute(nameof(PoopMapView), typeof(PoopMapView));
+		Routing.RegisterRoute(nameof(FollowingView), typeof(FollowingView));
+        Routing.RegisterRoute(nameof(AllUsersView), typeof(AllUsersView));
     }
+
 }
 

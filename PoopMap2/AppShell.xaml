@@ -17,7 +17,11 @@
         Title="MainPage"
         ContentTemplate="{DataTemplate local:MainPageView}"
         Route="MainPageView" />
-        
+
+        <ShellContent
+        Title="ProfilePage"
+        ContentTemplate="{DataTemplate local:ProfileView}"
+        Route="ProfileView" />
 
     </TabBar>
 

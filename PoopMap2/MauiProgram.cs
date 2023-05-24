@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using PoopMap2.ViewModels.Home;
 using PoopMap2.ViewModels.Login;
 using PoopMap2.ViewModels.PoopMap;
+using PoopMap2.ViewModels.Profile;
 using PoopMap2.Views;
 using PoopMap2.Views.Login;
 
@@ -28,8 +29,10 @@ public static class MauiProgram
 		builder.Services.AddSingleton<RegisterViewModel>();
 		builder.Services.AddSingleton<MainPageView>();
 		builder.Services.AddSingleton<MainPageViewModel>();
-		//builder.Services.AddSingleton<PoopMapView>();
-		//builder.Services.AddSingleton<PoopMapViewModel>();
+		builder.Services.AddSingleton<ProfileViewModel>();
+		builder.Services.AddSingleton<ProfileView>();
+		builder.Services.AddSingleton<FollowingView>();
+		builder.Services.AddSingleton<FollowingViewModel>();
 
 #if DEBUG
 		builder.Logging.AddDebug();

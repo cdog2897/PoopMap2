@@ -36,6 +36,14 @@
 	<ItemGroup>
 	  <MauiImage Remove="Resources\Images\star_empy.jpeg" />
 	  <MauiImage Remove="Resources\Images\star_full.jpeg" />
+	  <MauiImage Remove="Resources\Images\poop_empty.png" />
+	  <MauiImage Remove="Resources\Images\poop_full.png" />
+	  <MauiImage Remove="Resources\Images\poop_empty.png" />
+	  <MauiImage Remove="Resources\Images\poop_full.png" />
+	  <MauiImage Remove="Resources\Images\poop_empty.png" />
+	  <MauiImage Remove="Resources\Images\poop_full.png" />
+	  <MauiImage Remove="Resources\Images\poop_empty.png" />
+	  <MauiImage Remove="Resources\Images\poop_full.png" />
 	</ItemGroup>
 	<ItemGroup>
 		<!-- App Icon -->
@@ -81,6 +89,8 @@
 	  <None Remove="Resources\Images\poopmap2.png" />
 	  <None Remove="Resources\Images\poop_empty.png" />
 	  <None Remove="Resources\Images\poop_full.png" />
+	  <None Remove="Views\Profile\" />
+	  <None Remove="ViewModels\Profile\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
@@ -92,6 +102,8 @@
 	  <Folder Include="Services\" />
 	  <Folder Include="ViewModels\Home\" />
 	  <Folder Include="ViewModels\PoopMap\" />
+	  <Folder Include="Views\Profile\" />
+	  <Folder Include="ViewModels\Profile\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Remove="Resources\Images\PoopMap2.png" />
@@ -107,6 +119,14 @@
 	  <BundleResource Include="Resources\Images\star_full.jpeg" />
 	  <BundleResource Include="Resources\Images\poop_empty.png" />
 	  <BundleResource Include="Resources\Images\poop_empty.png" />
+	  <BundleResource Include="Resources\Images\poop_empty.png" />
+	  <BundleResource Include="Resources\Images\poop_full.png" />
+	  <BundleResource Include="Resources\Images\poop_empty.png" />
+	  <BundleResource Include="Resources\Images\poop_full.png" />
+	  <BundleResource Include="Resources\Images\poop_empty.png" />
+	  <BundleResource Include="Resources\Images\poop_full.png" />
+	  <BundleResource Include="Resources\Images\poop_empty.png" />
+	  <BundleResource Include="Resources\Images\poop_full.png" />
 	  <BundleResource Include="Resources\Images\poop_empty.png" />
 	  <BundleResource Include="Resources\Images\poop_full.png" />
 	</ItemGroup>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:vm="clr-namespace:PoopMap2.ViewModels.Profile"
+             x:DataType="vm:FollowingViewModel"
+             x:Class="PoopMap2.Views.FollowingView"
+             xmlns:model="clr-namespace:PoopMap2.Models"
+             Title="FollowingView">
+
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior
+            EventName="Appearing"
+            Command="{Binding AppearingCommand}" />
+    </ContentPage.Behaviors>
+
+
+    <StackLayout>
+
+        <ListView ItemsSource="{Binding Following}">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="{x:Type model:UserModel}">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Username}" HorizontalOptions="FillAndExpand" Margin="10"/>
+                                <Button Text="Unfollow"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:FollowingViewModel}}, Path=Unfollow_ClickedCommand}"
+                                        CommandParameter="{Binding AppId}"
+                                        HorizontalOptions="End"
+                                        Margin="5"/>
+                                <Button Text="Follow"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:FollowingViewModel}}, Path=Follow_ClickedCommand}"
+                                        CommandParameter="{Binding AppId}"
+                                        HorizontalOptions="End"
+                                        Margin="5"/>
+                            </StackLayout>
+                        </ViewCell>
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+
+    </StackLayout>
+
+</ContentPage>
