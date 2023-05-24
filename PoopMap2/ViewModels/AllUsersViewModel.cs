@@ -21,13 +21,11 @@ namespace PoopMap2.ViewModels
         public void OnAppearing()
         {
             following = new ObservableCollection<UserModel>(DAO.GetAllUsers());
-            SearchList = following;
         }
 
         [RelayCommand]
         public void SearchForUsers(string searchTerm)
         {
-            SearchList = following;
             SearchList = new ObservableCollection<UserModel>(following.Where(i => i.Username.Contains(searchTerm)).Take(30));
         }
 

@@ -35,7 +35,8 @@ namespace PoopMap2.ViewModels.Profile
             Username = thisUser.Username;
             Bio = thisUser.Bio;
             Following = JsonConvert.DeserializeObject<List<string>>(thisUser.Following).Count();
-            Followers = 0;
+            Followers = DAO.GetFollowers(thisUser.AppId).Count();
+			Poops = DAO.GetPoopsOfUser(thisUser.AppId).Count();
             OnPropertyChanged();
         }
 
@@ -45,7 +46,13 @@ namespace PoopMap2.ViewModels.Profile
 			await Shell.Current.GoToAsync($"{nameof(FollowingView)}");
         }
 
-		[RelayCommand]
+        [RelayCommand]
+        public async Task Followers_Clicked()
+        {
+            await Shell.Current.GoToAsync($"{nameof(FollowersView)}");
+        }
+
+        [RelayCommand]
 		public async Task Logout()
 		{
             IsBusy = true;

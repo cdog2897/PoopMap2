@@ -33,9 +33,11 @@ public static class MauiProgram
 		builder.Services.AddSingleton<ProfileView>();
 		builder.Services.AddSingleton<FollowingView>();
 		builder.Services.AddSingleton<FollowingViewModel>();
+        builder.Services.AddSingleton<FollowersView>();
+        builder.Services.AddSingleton<FollowersViewModel>();
 
 #if DEBUG
-		builder.Logging.AddDebug();
+        builder.Logging.AddDebug();
 #endif
 
 		return builder.Build();

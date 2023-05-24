@@ -49,16 +49,19 @@
         </StackLayout>
 
         <StackLayout Grid.Row="3" Grid.Column="1" HorizontalOptions="Center">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Followers_ClickedCommand}"/>
+            </StackLayout.GestureRecognizers>
             <Label Text="{Binding Followers}" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center"/>
             <Label Text="Followers" HorizontalOptions="Center"/>
         </StackLayout>
 
         <StackLayout Grid.Row="3" Grid.Column="2" HorizontalOptions="Center">
-            <Label Text="{Binding Following}" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding Following_ClickedCommand}"/>
-                </Label.GestureRecognizers>
-                </Label>
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Following_ClickedCommand}"/>
+            </StackLayout.GestureRecognizers>
+            
+            <Label Text="{Binding Following}" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center"/>
             <Label Text="Following" HorizontalOptions="Center"/>
         </StackLayout>
 

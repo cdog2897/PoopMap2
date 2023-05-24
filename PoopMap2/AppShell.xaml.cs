@@ -13,6 +13,7 @@ public partial class AppShell : Shell
 		Routing.RegisterRoute(nameof(RegisterView), typeof(RegisterView));
 		Routing.RegisterRoute(nameof(FollowingView), typeof(FollowingView));
         Routing.RegisterRoute(nameof(AllUsersView), typeof(AllUsersView));
+        Routing.RegisterRoute(nameof(FollowersView), typeof(FollowersView));
     }
 
 }

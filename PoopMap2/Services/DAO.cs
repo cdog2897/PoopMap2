@@ -216,6 +216,25 @@ namespace PoopMap2.Services
             string followingString = JsonConvert.SerializeObject(endFollowing);
             await DAO.UpdateFriendsLists(thisUserId, followingString);
         }
+
+        public static List<UserModel> GetFollowers(string appId)
+        {
+            var allUsers = DAO.GetAllUsers();
+            var returnThis = new List<UserModel>();
+
+            foreach(UserModel user in allUsers)
+            {
+                var stringList = JsonConvert.DeserializeObject<List<string>>(user.Following);
+                foreach(string s in stringList)
+                {
+                    if(appId == s)
+                    {
+                        returnThis.Add(user);
+                    }
+                }
+            }
+            return returnThis;
+        }
     }
 }
 
