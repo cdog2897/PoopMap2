@@ -17,7 +17,16 @@
 
     <StackLayout>
 
-        <ListView ItemsSource="{Binding Following}">
+        <SearchBar
+                x:Name="searchBar"
+                Placeholder="Search For Users"
+                SearchCommand="{Binding SearchForUsersCommand}"
+                SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}"
+                BackgroundColor="White"
+                TextColor="Black"
+                />
+
+        <ListView ItemsSource="{Binding SearchList}">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="{x:Type model:UserModel}">
                         <ViewCell>

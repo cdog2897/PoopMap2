@@ -3,12 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="PoopMap2.Views.ProfileView"
-             Title="ProfileView">
+             Title="Profile">
+
+    <ContentPage.ToolbarItems>
+        
+        <ToolbarItem IconImageSource="search.png" Command="{Binding SearchCommand}"/>
+    </ContentPage.ToolbarItems>
 
         <ContentPage.Behaviors>
         <toolkit:EventToCommandBehavior
             EventName="Appearing"
-            Command="{Binding AppearingCommand}" />
+            Command="{Binding AppearingCommand}"/>
     </ContentPage.Behaviors>
 
     <Grid Margin="30, 10, 30, 0" >

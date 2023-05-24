@@ -91,6 +91,7 @@
 	  <None Remove="Resources\Images\poop_full.png" />
 	  <None Remove="Views\Profile\" />
 	  <None Remove="ViewModels\Profile\" />
+	  <None Remove="Resources\Images\search.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
@@ -129,5 +130,6 @@
 	  <BundleResource Include="Resources\Images\poop_full.png" />
 	  <BundleResource Include="Resources\Images\poop_empty.png" />
 	  <BundleResource Include="Resources\Images\poop_full.png" />
+	  <BundleResource Include="Resources\Images\search.png" />
 	</ItemGroup>
 </Project>

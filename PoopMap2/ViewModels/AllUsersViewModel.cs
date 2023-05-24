@@ -5,19 +5,30 @@ using CommunityToolkit.Mvvm.Input;
 using Newtonsoft.Json;
 using PoopMap2.Models;
 using PoopMap2.Services;
+using Realms.Sync;
 
 namespace PoopMap2.ViewModels
 {
 	public partial class AllUsersViewModel : BaseViewModel
 	{
-        [ObservableProperty]
         ObservableCollection<UserModel> following;
+
+        [ObservableProperty]
+        ObservableCollection<UserModel> searchList;
+
 
         [RelayCommand]
         public void OnAppearing()
         {
-            ObservableCollection<UserModel> followingList = new ObservableCollection<UserModel>(DAO.GetAllUsers());
-            Following = followingList;
+            following = new ObservableCollection<UserModel>(DAO.GetAllUsers());
+            SearchList = following;
+        }
+
+        [RelayCommand]
+        public void SearchForUsers(string searchTerm)
+        {
+            SearchList = following;
+            SearchList = new ObservableCollection<UserModel>(following.Where(i => i.Username.Contains(searchTerm)).Take(30));
         }
 
         [RelayCommand]

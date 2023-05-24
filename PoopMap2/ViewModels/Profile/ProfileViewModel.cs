@@ -61,6 +61,12 @@ namespace PoopMap2.ViewModels.Profile
 			await Shell.Current.GoToAsync($"{nameof(AllUsersView)}");
 		}
 
+		[RelayCommand]
+		public async Task Search()
+		{
+			await Shell.Current.GoToAsync($"{nameof(AllUsersView)}");
+		}
+
 
 	}
 }
