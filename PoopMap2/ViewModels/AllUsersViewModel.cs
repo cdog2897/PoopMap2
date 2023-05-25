@@ -11,7 +11,7 @@ namespace PoopMap2.ViewModels
 {
 	public partial class AllUsersViewModel : BaseViewModel
 	{
-        ObservableCollection<UserModel> following;
+        ObservableCollection<UserModel> users;
 
         [ObservableProperty]
         ObservableCollection<UserModel> searchList;
@@ -20,13 +20,25 @@ namespace PoopMap2.ViewModels
         [RelayCommand]
         public void OnAppearing()
         {
-            following = new ObservableCollection<UserModel>(DAO.GetAllUsers());
+            var usersList = DAO.GetAllUsers();
+            users = new ObservableCollection<UserModel>(usersList);
+            var following = DAO.GetFollowing(RealmService.CurrentUser.Id);
+            foreach(UserModel user in usersList)
+            {
+                foreach (UserModel u in following)
+                {
+                    if (user.AppId == u.AppId)
+                    {
+                        users.Remove(user);
+                    }
+                }
+            }
         }
 
         [RelayCommand]
         public void SearchForUsers(string searchTerm)
         {
-            SearchList = new ObservableCollection<UserModel>(following.Where(i => i.Username.Contains(searchTerm)).Take(30));
+            SearchList = new ObservableCollection<UserModel>(users.Where(i => i.Username.Contains(searchTerm)).Take(30));
         }
 
         [RelayCommand]
@@ -35,6 +47,7 @@ namespace PoopMap2.ViewModels
             IsBusy = true;
             await DAO.FollowUser(RealmService.CurrentUser.Id, userId);
             IsBusy = false;
+            SearchList.Clear();
             OnAppearing();
         }
 

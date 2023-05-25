@@ -38,6 +38,7 @@
                                         HorizontalOptions="End"
                                         Margin="5"/>
                                 <Button Text="Follow"
+                                        x:Name="follow_btn"
                                         Command="{Binding Source={RelativeSource AncestorType={x:Type vm:AllUsersViewModel}}, Path=Follow_ClickedCommand}"
                                         CommandParameter="{Binding AppId}"
                                         HorizontalOptions="End"

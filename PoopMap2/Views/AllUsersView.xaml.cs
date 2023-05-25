@@ -8,5 +8,8 @@ public partial class AllUsersView : ContentPage
 	{
 		InitializeComponent();
 		BindingContext = new AllUsersViewModel();
-	}
+
+    }
+
+	
 }
