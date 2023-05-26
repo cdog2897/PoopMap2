@@ -6,7 +6,6 @@
              Title="Profile">
 
     <ContentPage.ToolbarItems>
-        
         <ToolbarItem IconImageSource="search.png" Command="{Binding SearchCommand}"/>
     </ContentPage.ToolbarItems>
 
@@ -35,7 +34,7 @@
 
 
         <StackLayout>
-            <Image Source="dotnet_bot.png" HeightRequest="100"/>
+            <ImageButton Source="{Binding ProfilePic}" HeightRequest="100" Command="{Binding Img_ClickedCommand}"/>
         </StackLayout>
 
 

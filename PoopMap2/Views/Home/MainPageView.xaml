@@ -8,11 +8,6 @@
              >
 
 
-
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Logout" Order="Primary" IconImageSource="logout.png" Command="{Binding LogoutCommand}"/>
-    </ContentPage.ToolbarItems>
-
     <Grid Margin="30, 0, 30, 0">
         <Grid.RowDefinitions>
             <RowDefinition Height="80" />

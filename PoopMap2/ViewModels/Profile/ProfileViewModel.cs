@@ -10,7 +10,9 @@ namespace PoopMap2.ViewModels.Profile
 {
 	public partial class ProfileViewModel : BaseViewModel
 	{
-
+		[ObservableProperty]
+		public ImageSource profilePic;
+		
 		[ObservableProperty]
 		public string username;
 
@@ -38,6 +40,29 @@ namespace PoopMap2.ViewModels.Profile
             Followers = DAO.GetFollowers(thisUser.AppId).Count();
 			Poops = DAO.GetPoopsOfUser(thisUser.AppId).Count();
             OnPropertyChanged();
+        }
+
+		[RelayCommand]
+		public async Task Img_Clicked()
+		{
+			byte[] bytes = null;
+            if (MediaPicker.Default.IsCaptureSupported)
+            {
+                FileResult photo = await MediaPicker.Default.CapturePhotoAsync();
+
+                if (photo != null)
+                {
+					//convert image to bytes
+                    string localFilePath = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
+                    bytes = PhotoService.ConvertImageToBytes(localFilePath, photo);
+                }
+            }
+
+			if(bytes != null)
+			{
+				// convert bytes to imagesource
+				ProfilePic = PhotoService.ConvertBytesToImage(bytes);
+			}
         }
 
 		[RelayCommand]

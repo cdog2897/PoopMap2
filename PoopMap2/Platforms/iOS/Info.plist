@@ -29,6 +29,8 @@
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/appicon.appiconset</string>
 	<key>UIUserInterfaceStyle</key>
-<string>Light</string>
+	<string>Light</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This app needs access to the camera to take photos.</string>
 </dict>
 </plist>

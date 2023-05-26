@@ -1,27 +1,40 @@
 ﻿using System;
+
 namespace PoopMap2.Services
 {
 	public static class PhotoService
 	{
 
-		//public byte[] ConvertImageToBytes(ImageSource image)
-		//{
-  //          byte[] imageData;
+        public static byte[] ConvertImageToBytes(string filePath, FileResult photo)
+        {
 
-  //          // Open the image file stream
-  //          using (FileStream fileStream = File.ReadAllBytes(image))
-  //          {
-  //              // Read the image data into a byte array
-  //              using (MemoryStream memoryStream = new MemoryStream())
-  //              {
-  //                  fileStream.CopyTo(memoryStream);
-  //                  imageData = memoryStream.ToArray();
-  //              }
-  //          }
+            // save the file into local storage
+            //using Stream sourceStream = await photo.OpenReadAsync();
+            //using FileStream localFileStream = File.OpenWrite(filePath);
+            //await sourceStream.CopyToAsync(localFileStream);
 
-  //          return imageData;
-  //      }
-		
-	}
+
+            byte[] imageData;
+
+            // Open the image file stream
+            using (FileStream fileStream = File.OpenRead(filePath))
+            {
+                // Read the image data into a byte array
+                using (MemoryStream memoryStream = new MemoryStream())
+                {
+                    fileStream.CopyTo(memoryStream);
+                    imageData = memoryStream.ToArray();
+                }
+            }
+
+            return imageData;
+        }
+
+        public static ImageSource ConvertBytesToImage(byte[] bytes)
+        {
+            ImageSource imageSource = ImageSource.FromStream(() => new MemoryStream(bytes));
+            return imageSource;
+        }
+    }
 }
 
