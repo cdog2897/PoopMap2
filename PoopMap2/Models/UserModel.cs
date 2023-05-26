@@ -22,6 +22,9 @@ namespace PoopMap2.Models
         [MapTo("bio")]
         public string Bio { get; set; }
 
+        [MapTo("profilePic")]
+        public string ProfilePic { get; set; }
+
     }
 }
 

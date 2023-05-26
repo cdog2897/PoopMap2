@@ -25,7 +25,6 @@ namespace PoopMap2.ViewModels.Profile
 				followingList.Add(DAO.GetUserById(s));
 			}
 
-
 			Following = followingList;
 		}
 

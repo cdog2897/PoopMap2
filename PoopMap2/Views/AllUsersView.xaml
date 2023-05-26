@@ -32,11 +32,6 @@
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
                                 <Label Text="{Binding Username}" HorizontalOptions="FillAndExpand" Margin="10"/>
-                                <Button Text="Unfollow"
-                                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:AllUsersViewModel}}, Path=Unfollow_ClickedCommand}"
-                                        CommandParameter="{Binding AppId}"
-                                        HorizontalOptions="End"
-                                        Margin="5"/>
                                 <Button Text="Follow"
                                         x:Name="follow_btn"
                                         Command="{Binding Source={RelativeSource AncestorType={x:Type vm:AllUsersViewModel}}, Path=Follow_ClickedCommand}"
@@ -45,13 +40,9 @@
                                         Margin="5"/>
                             </StackLayout>
                         </ViewCell>
-
                     </DataTemplate>
-
                 </ListView.ItemTemplate>
-
             </ListView>
-
 
     </StackLayout>
 
