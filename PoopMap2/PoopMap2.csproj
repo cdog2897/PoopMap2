@@ -33,6 +33,9 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
 	<ItemGroup>
 	  <MauiImage Remove="Resources\Images\star_empy.jpeg" />
 	  <MauiImage Remove="Resources\Images\star_full.jpeg" />
@@ -70,7 +73,7 @@
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="MongoDB.Bson" Version="2.19.1" />
 		<PackageReference Include="CommunityToolkit.Maui" Version="5.1.0" />
-		<PackageReference Include="Camera.MAUI" Version="1.4.2" />
+		<PackageReference Include="Camera.MAUI" Version="1.4.3" />
 	</ItemGroup>
 
 	<ItemGroup>

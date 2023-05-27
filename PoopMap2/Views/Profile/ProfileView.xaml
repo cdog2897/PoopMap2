@@ -34,9 +34,8 @@
 
 
         <StackLayout>
-            <ImageButton Source="{Binding ProfilePic}" HeightRequest="100" Command="{Binding Img_ClickedCommand}"/>
+            <Image Source="{Binding ProfilePic}" HeightRequest="100"/>
         </StackLayout>
-
 
         <Label FontSize="18" Text="{Binding Username}" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="20, 10, 0, 0"/>
 
@@ -64,7 +63,7 @@
             <Label Text="Following" HorizontalOptions="Center"/>
         </StackLayout>
 
-        <Button Text="Edit Profile" Grid.Row="4" Grid.ColumnSpan="3" Margin="5"/>
+        <Button Text="Edit Profile" Grid.Row="4" Grid.ColumnSpan="3" Margin="5" Command="{Binding EditProfile_ClickedCommand}"/>
         <Button Text="All Users" Grid.Row="5" Grid.ColumnSpan="3" Margin="5" Command="{Binding AllUsersCommand}"/>
         <Button Text="Logout" Grid.Row="6" Grid.ColumnSpan="3" Margin="5" Command="{Binding LogoutCommand}"/>
 

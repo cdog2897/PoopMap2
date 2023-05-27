@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using PoopMap2.Models;
 using PoopMap2.Services;
 using PoopMap2.Views;
+using PoopMap2.Views.Profile;
 
 namespace PoopMap2.ViewModels.Profile
 {
@@ -39,8 +40,15 @@ namespace PoopMap2.ViewModels.Profile
             Following = JsonConvert.DeserializeObject<List<string>>(thisUser.Following).Count();
             Followers = DAO.GetFollowers(thisUser.AppId).Count();
 			Poops = DAO.GetPoopsOfUser(thisUser.AppId).Count();
+			//ProfilePic = DAO.GetProfilePic();
             OnPropertyChanged();
         }
+
+		[RelayCommand]
+		public async Task EditProfile_Clicked()
+		{
+			await Shell.Current.GoToAsync($"{nameof(EditProfileView)}");
+		}
 
 		[RelayCommand]
 		public async Task Img_Clicked()
@@ -52,16 +60,16 @@ namespace PoopMap2.ViewModels.Profile
 
                 if (photo != null)
                 {
-					//convert image to bytes
-                    string localFilePath = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
-                    bytes = PhotoService.ConvertImageToBytes(localFilePath, photo);
+                    //convert image to bytes
+                    bytes = await PhotoService.ConvertImageToBytes(photo);
                 }
             }
 
-			if(bytes != null)
+            if (bytes != null)
 			{
 				// convert bytes to imagesource
-				ProfilePic = PhotoService.ConvertBytesToImage(bytes);
+				ImageSource imgSource = PhotoService.ConvertBytesToImage(bytes);
+
 			}
         }
 

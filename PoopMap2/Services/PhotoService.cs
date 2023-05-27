@@ -1,30 +1,30 @@
 ﻿using System;
+using Microsoft.Maui.Graphics.Platform;
+using IImage = Microsoft.Maui.Graphics.IImage;
 
 namespace PoopMap2.Services
 {
 	public static class PhotoService
 	{
 
-        public static byte[] ConvertImageToBytes(string filePath, FileResult photo)
+        public async static Task<IImage> FormatImage(FileResult photo)
         {
 
-            // save the file into local storage
-            //using Stream sourceStream = await photo.OpenReadAsync();
-            //using FileStream localFileStream = File.OpenWrite(filePath);
-            //await sourceStream.CopyToAsync(localFileStream);
+            Stream stream = await photo.OpenReadAsync();
+            IImage image = PlatformImage.FromStream(stream);
+            return image;
+        }
 
+        public async static Task<byte[]> ConvertImageToBytes(FileResult photo)
+        {
 
             byte[] imageData;
 
-            // Open the image file stream
-            using (FileStream fileStream = File.OpenRead(filePath))
+            Stream fileStream = await photo.OpenReadAsync();
+            using (MemoryStream memoryStream = new MemoryStream())
             {
-                // Read the image data into a byte array
-                using (MemoryStream memoryStream = new MemoryStream())
-                {
-                    fileStream.CopyTo(memoryStream);
-                    imageData = memoryStream.ToArray();
-                }
+                await fileStream.CopyToAsync(memoryStream);
+                imageData = memoryStream.ToArray();
             }
 
             return imageData;
