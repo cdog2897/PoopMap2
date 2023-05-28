@@ -18,7 +18,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-            <ImageButton Source="dotnet_bot.png" HeightRequest="100" Grid.ColumnSpan="2"/>
+            <ImageButton Source="dotnet_bot.png" HeightRequest="100" Grid.ColumnSpan="2" Command="{Binding Profile_ClickedCommand}" />
 
             <Label Text="Username" FontSize="18" Grid.Row="1" VerticalOptions="Center"/>
             <Label x:Name="username" FontSize="18"  Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start"/>

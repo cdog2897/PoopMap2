@@ -16,6 +16,7 @@ public partial class AppShell : Shell
         Routing.RegisterRoute(nameof(AllUsersView), typeof(AllUsersView));
         Routing.RegisterRoute(nameof(FollowersView), typeof(FollowersView));
         Routing.RegisterRoute(nameof(EditProfileView), typeof(EditProfileView));
+		Routing.RegisterRoute(nameof(EditProfilePictureView), typeof(EditProfilePictureView));
     }
 
 }

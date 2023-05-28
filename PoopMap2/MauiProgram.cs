@@ -40,6 +40,8 @@ public static class MauiProgram
         builder.Services.AddSingleton<FollowersViewModel>();
         builder.Services.AddSingleton<EditProfileViewModel>();
         builder.Services.AddSingleton<EditProfileView>();
+		builder.Services.AddSingleton<EditProfilePictureView>();
+		builder.Services.AddSingleton<EditProfilePictureViewModel>();
 
 #if DEBUG
         builder.Logging.AddDebug();

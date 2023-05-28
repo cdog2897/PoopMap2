@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.Maui.Controls;
 using Microsoft.Maui.Graphics.Platform;
 using IImage = Microsoft.Maui.Graphics.IImage;
 
@@ -34,6 +35,15 @@ namespace PoopMap2.Services
         {
             ImageSource imageSource = ImageSource.FromStream(() => new MemoryStream(bytes));
             return imageSource;
+        }
+
+        public static async Task<string> ConvertImageSourceToBase64(ImageSource image)
+        {
+            Stream stream = await ((StreamImageSource)image).Stream(CancellationToken.None);
+            byte[] bytesAvailable = new byte[stream.Length];
+            stream.Read(bytesAvailable, 0, bytesAvailable.Length);
+
+            return Convert.ToBase64String(bytesAvailable);
         }
     }
 }

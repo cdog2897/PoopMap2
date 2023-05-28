@@ -19,5 +19,7 @@ public partial class EditProfileView : ContentPage
         //{
         //    await cameraView.StartCameraAsync();
         //});
+
+
     }
 }

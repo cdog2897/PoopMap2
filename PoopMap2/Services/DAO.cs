@@ -235,6 +235,17 @@ namespace PoopMap2.Services
             }
             return returnThis;
         }
+
+        public async static Task UpdateProfilePic(string imgStr, string userId)
+        {
+
+            var realm = RealmService.GetMainThreadRealm();
+            await realm.WriteAsync(() =>
+            {
+                var thisUser = realm.All<UserModel>().Where(i => i.AppId == userId).First();
+                thisUser.ProfilePic = imgStr;
+            });
+        }
     }
 }
 
