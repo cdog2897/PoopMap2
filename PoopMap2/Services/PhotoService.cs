@@ -45,6 +45,13 @@ namespace PoopMap2.Services
 
             return Convert.ToBase64String(bytesAvailable);
         }
+
+        public static ImageSource ConvertBase64ToImageSource(string base64pic)
+        {
+            byte[] bytes = Convert.FromBase64String(base64pic);
+            ImageSource imageSource = ImageSource.FromStream(() => new MemoryStream(bytes));
+            return imageSource;
+        }
     }
 }
 

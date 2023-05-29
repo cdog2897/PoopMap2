@@ -8,12 +8,11 @@
              xmlns:model="clr-namespace:PoopMap2.Models"
              Title="AllUsersView">
 
-        <ContentPage.Behaviors>
+    <ContentPage.Behaviors>
         <toolkit:EventToCommandBehavior
             EventName="Appearing"
             Command="{Binding AppearingCommand}" />
     </ContentPage.Behaviors>
-
 
     <StackLayout>
 
@@ -27,22 +26,22 @@
                 />
 
         <ListView ItemsSource="{Binding SearchList}">
-                <ListView.ItemTemplate>
-                    <DataTemplate x:DataType="{x:Type model:UserModel}">
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding Username}" HorizontalOptions="FillAndExpand" Margin="10"/>
-                                <Button Text="Follow"
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="{x:Type model:UserModel}">
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding Username}" HorizontalOptions="FillAndExpand" Margin="10"/>
+                            <Button Text="Follow"
                                         x:Name="follow_btn"
                                         Command="{Binding Source={RelativeSource AncestorType={x:Type vm:AllUsersViewModel}}, Path=Follow_ClickedCommand}"
                                         CommandParameter="{Binding AppId}"
                                         HorizontalOptions="End"
                                         Margin="5"/>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
     </StackLayout>
 

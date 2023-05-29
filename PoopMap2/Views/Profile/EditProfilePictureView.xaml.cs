@@ -24,9 +24,8 @@ public partial class EditProfilePictureView : ContentPage
 
     public async void Button_Clicked(System.Object sender, System.EventArgs e)
     {
+
         string imageStr = await PhotoService.ConvertImageSourceToBase64(cameraView.GetSnapShot());
-
-
         var viewModel = (EditProfilePictureViewModel)BindingContext;
         if (viewModel.UpdateProfilePicCommand.CanExecute(imageStr))
             viewModel.UpdateProfilePicCommand.Execute(imageStr);

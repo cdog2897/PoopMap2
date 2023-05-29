@@ -40,7 +40,7 @@ namespace PoopMap2.ViewModels.Profile
             Following = JsonConvert.DeserializeObject<List<string>>(thisUser.Following).Count();
             Followers = DAO.GetFollowers(thisUser.AppId).Count();
 			Poops = DAO.GetPoopsOfUser(thisUser.AppId).Count();
-			//ProfilePic = DAO.GetProfilePic();
+			ProfilePic = PhotoService.ConvertBase64ToImageSource(thisUser.ProfilePic);
             OnPropertyChanged();
         }
 
@@ -53,24 +53,7 @@ namespace PoopMap2.ViewModels.Profile
 		[RelayCommand]
 		public async Task Img_Clicked()
 		{
-			byte[] bytes = null;
-            if (MediaPicker.Default.IsCaptureSupported)
-            {
-                FileResult photo = await MediaPicker.Default.CapturePhotoAsync();
-
-                if (photo != null)
-                {
-                    //convert image to bytes
-                    bytes = await PhotoService.ConvertImageToBytes(photo);
-                }
-            }
-
-            if (bytes != null)
-			{
-				// convert bytes to imagesource
-				ImageSource imgSource = PhotoService.ConvertBytesToImage(bytes);
-
-			}
+			await Shell.Current.GoToAsync($"{nameof(EditProfilePictureView)}");
         }
 
 		[RelayCommand]

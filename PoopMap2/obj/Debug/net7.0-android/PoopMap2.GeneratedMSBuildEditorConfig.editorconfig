@@ -38,6 +38,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = PoopMap2.Resources.Styles.
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
 
+[/Users/luberdoodle/Projects/PoopMap2/PoopMap2/Views/BusyPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PoopMap2.Views.BusyPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/BusyPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/BusyPopup.xaml
+
 [/Users/luberdoodle/Projects/PoopMap2/PoopMap2/Views/Home/MainPageView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PoopMap2.Views.Home.MainPageView.xaml
@@ -49,3 +55,45 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PoopMap2.Views.Login.LoginView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/Login/LoginView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/Login/LoginView.xaml
+
+[/Users/luberdoodle/Projects/PoopMap2/PoopMap2/Views/Login/RegisterView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PoopMap2.Views.Login.RegisterView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Login/RegisterView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Login/RegisterView.xaml
+
+[/Users/luberdoodle/Projects/PoopMap2/PoopMap2/Views/Profile/AllUsersView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PoopMap2.Views.Profile.AllUsersView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Profile/AllUsersView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Profile/AllUsersView.xaml
+
+[/Users/luberdoodle/Projects/PoopMap2/PoopMap2/Views/Profile/EditProfilePictureView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PoopMap2.Views.Profile.EditProfilePictureView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Profile/EditProfilePictureView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Profile/EditProfilePictureView.xaml
+
+[/Users/luberdoodle/Projects/PoopMap2/PoopMap2/Views/Profile/EditProfileView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PoopMap2.Views.Profile.EditProfileView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Profile/EditProfileView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Profile/EditProfileView.xaml
+
+[/Users/luberdoodle/Projects/PoopMap2/PoopMap2/Views/Profile/FollowersView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PoopMap2.Views.Profile.FollowersView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Profile/FollowersView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Profile/FollowersView.xaml
+
+[/Users/luberdoodle/Projects/PoopMap2/PoopMap2/Views/Profile/FollowingView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PoopMap2.Views.Profile.FollowingView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Profile/FollowingView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Profile/FollowingView.xaml
+
+[/Users/luberdoodle/Projects/PoopMap2/PoopMap2/Views/Profile/ProfileView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PoopMap2.Views.Profile.ProfileView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Profile/ProfileView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Profile/ProfileView.xaml

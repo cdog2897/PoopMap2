@@ -50,6 +50,14 @@
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
           "dependencies": {
+            "Camera.MAUI": {
+              "target": "Package",
+              "version": "[1.4.3, )"
+            },
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.0, )"
@@ -184,6 +192,14 @@
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
           "dependencies": {
+            "Camera.MAUI": {
+              "target": "Package",
+              "version": "[1.4.3, )"
+            },
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.0, )"
@@ -263,6 +279,14 @@
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
           "dependencies": {
+            "Camera.MAUI": {
+              "target": "Package",
+              "version": "[1.4.3, )"
+            },
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.0, )"

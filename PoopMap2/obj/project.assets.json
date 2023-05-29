@@ -2,6 +2,51 @@
   "version": 3,
   "targets": {
     "net7.0-android33.0": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/Camera.MAUI.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Camera.MAUI.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -2154,9 +2199,67 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-android33.0/android-arm": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/Camera.MAUI.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Camera.MAUI.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -4222,9 +4325,67 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-android33.0/android-arm64": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/Camera.MAUI.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Camera.MAUI.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -6290,9 +6451,67 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-android33.0/android-x64": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/Camera.MAUI.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Camera.MAUI.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -8358,9 +8577,67 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-android33.0/android-x86": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/Camera.MAUI.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Camera.MAUI.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -10426,9 +10703,67 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-android33.0/ios-arm64": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/Camera.MAUI.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Camera.MAUI.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -12495,9 +12830,67 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-android33.0/maccatalyst-x64": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/Camera.MAUI.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Camera.MAUI.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -14563,9 +14956,63 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-ios16.1": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/Camera.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/Camera.MAUI.dll": {}
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -15351,11 +15798,65 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
           }
         }
       }
     },
     "net7.0-ios16.1/android-arm": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/Camera.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/Camera.MAUI.dll": {}
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -16277,9 +16778,63 @@
             "related": ".xml"
           }
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-ios16.1/android-arm64": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/Camera.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/Camera.MAUI.dll": {}
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -17201,9 +17756,63 @@
             "related": ".xml"
           }
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-ios16.1/android-x64": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/Camera.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/Camera.MAUI.dll": {}
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -18125,9 +18734,63 @@
             "related": ".xml"
           }
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-ios16.1/android-x86": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/Camera.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/Camera.MAUI.dll": {}
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -19049,9 +19712,63 @@
             "related": ".xml"
           }
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-ios16.1/ios-arm64": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/Camera.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/Camera.MAUI.dll": {}
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -19974,9 +20691,63 @@
             "related": ".xml"
           }
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-ios16.1/maccatalyst-x64": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/Camera.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/Camera.MAUI.dll": {}
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -20898,9 +21669,63 @@
             "related": ".xml"
           }
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-maccatalyst16.1": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/Camera.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/Camera.MAUI.dll": {}
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -21688,9 +22513,63 @@
             "related": ".xml"
           }
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-maccatalyst16.1/android-arm": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/Camera.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/Camera.MAUI.dll": {}
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -22612,9 +23491,63 @@
             "related": ".xml"
           }
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-maccatalyst16.1/android-arm64": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/Camera.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/Camera.MAUI.dll": {}
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -23536,9 +24469,63 @@
             "related": ".xml"
           }
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-maccatalyst16.1/android-x64": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/Camera.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/Camera.MAUI.dll": {}
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -24460,9 +25447,63 @@
             "related": ".xml"
           }
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-maccatalyst16.1/android-x86": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/Camera.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/Camera.MAUI.dll": {}
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -25384,9 +26425,63 @@
             "related": ".xml"
           }
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-maccatalyst16.1/ios-arm64": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/Camera.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/Camera.MAUI.dll": {}
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -26309,9 +27404,63 @@
             "related": ".xml"
           }
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
       }
     },
     "net7.0-maccatalyst16.1/maccatalyst-x64": {
+      "Camera.MAUI/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/Camera.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/Camera.MAUI.dll": {}
+        }
+      },
+      "CommunityToolkit.Maui/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "5.1.0"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/5.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CommunityToolkit.Mvvm/8.2.0": {
         "type": "package",
         "compile": {
@@ -27231,12 +28380,100 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
           }
         }
       }
     }
   },
   "libraries": {
+    "Camera.MAUI/1.4.3": {
+      "sha512": "443hlz/ZCQLpHNwQWwOOEs7wT7/9YGGmWTLNwfpjQciyfQGM7PdcX1bus33ayeqS32kKZQWA5J5aoR4iaaO3Sg==",
+      "type": "package",
+      "path": "camera.maui/1.4.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Readme.md",
+        "camera.maui.1.4.3.nupkg.sha512",
+        "camera.maui.nuspec",
+        "camera.maui.png",
+        "lib/net7.0-android33.0/Camera.MAUI.aar",
+        "lib/net7.0-android33.0/Camera.MAUI.dll",
+        "lib/net7.0-android33.0/Camera.MAUI.xml",
+        "lib/net7.0-ios16.1/Camera.MAUI.dll",
+        "lib/net7.0-maccatalyst16.1/Camera.MAUI.dll",
+        "lib/net7.0-windows10.0.19041/Camera.MAUI.dll",
+        "lib/net7.0/Camera.MAUI.dll"
+      ]
+    },
+    "CommunityToolkit.Maui/5.1.0": {
+      "sha512": "+1WDMZzM8Skc5+qmc3HJZ25qIrWKYotnZRHxO1PTmWWTKPXVmJa7PTo4gmzX+ga4gdIa6jvsvO255cVKWb0i8Q==",
+      "type": "package",
+      "path": "communitytoolkit.maui/5.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ReadMe.txt",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.Analyzers.dll",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.SourceGenerators.dll",
+        "communitytoolkit.maui.5.1.0.nupkg.sha512",
+        "communitytoolkit.maui.nuspec",
+        "icon.png",
+        "lib/net7.0-android33.0/CommunityToolkit.Maui.aar",
+        "lib/net7.0-android33.0/CommunityToolkit.Maui.dll",
+        "lib/net7.0-android33.0/CommunityToolkit.Maui.xml",
+        "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll",
+        "lib/net7.0-ios16.1/CommunityToolkit.Maui.xml",
+        "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll",
+        "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.xml",
+        "lib/net7.0-tizen7.0/CommunityToolkit.Maui.dll",
+        "lib/net7.0-tizen7.0/CommunityToolkit.Maui.xml",
+        "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.dll",
+        "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.xml",
+        "lib/net7.0/CommunityToolkit.Maui.dll",
+        "lib/net7.0/CommunityToolkit.Maui.xml"
+      ]
+    },
+    "CommunityToolkit.Maui.Core/5.1.0": {
+      "sha512": "ZIZ7Ls+30EUoF7tgvaM/Y5MHfkdW5L7zsnFAF7aYRT1830HZqWnnyElXTC0GGjnunjvDl/cvthK1+ZfkuHCjrA==",
+      "type": "package",
+      "path": "communitytoolkit.maui.core/5.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ReadMe.txt",
+        "communitytoolkit.maui.core.5.1.0.nupkg.sha512",
+        "communitytoolkit.maui.core.nuspec",
+        "icon.png",
+        "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.aar",
+        "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.xml",
+        "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll",
+        "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.xml",
+        "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll",
+        "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.xml",
+        "lib/net7.0-tizen7.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net7.0-tizen7.0/CommunityToolkit.Maui.Core.xml",
+        "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll",
+        "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.Core.xml",
+        "lib/net7.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net7.0/CommunityToolkit.Maui.Core.xml"
+      ]
+    },
     "CommunityToolkit.Mvvm/8.2.0": {
       "sha512": "F883u+B0AVUkRZS+VQBiZEJiqlGiiQhGA8Ejy1/Y8fl4ecBmSd+HYuDso0iiUhh+UxRDjp2aTQ7jGkuL2S4NrA==",
       "type": "package",
@@ -31906,10 +33143,95 @@
         "xamarin.kotlinx.coroutines.core.jvm.1.6.4.1.nupkg.sha512",
         "xamarin.kotlinx.coroutines.core.jvm.nuspec"
       ]
+    },
+    "ZXing.Net/0.16.9": {
+      "sha512": "7WaVMHklpT3Ye2ragqRIwlFRsb6kOk63BOGADV0fan3ulVfGLUYkDi5yNUsZS/7FVNkWbtHAlDLmu4WnHGfqvQ==",
+      "type": "package",
+      "path": "zxing.net/0.16.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/native/zxing.XML",
+        "lib/native/zxing.pri",
+        "lib/native/zxing.winmd",
+        "lib/net20-cf/zxing.ce2.0.dll",
+        "lib/net20-cf/zxing.ce2.0.xml",
+        "lib/net20/zxing.XML",
+        "lib/net20/zxing.dll",
+        "lib/net35-cf/zxing.ce3.5.dll",
+        "lib/net35-cf/zxing.ce3.5.xml",
+        "lib/net35/zxing.XML",
+        "lib/net35/zxing.dll",
+        "lib/net40/zxing.XML",
+        "lib/net40/zxing.dll",
+        "lib/net40/zxing.presentation.XML",
+        "lib/net40/zxing.presentation.dll",
+        "lib/net45/zxing.XML",
+        "lib/net45/zxing.dll",
+        "lib/net45/zxing.presentation.XML",
+        "lib/net45/zxing.presentation.dll",
+        "lib/net461/zxing.XML",
+        "lib/net461/zxing.dll",
+        "lib/net461/zxing.presentation.XML",
+        "lib/net461/zxing.presentation.dll",
+        "lib/net47/zxing.XML",
+        "lib/net47/zxing.dll",
+        "lib/net47/zxing.presentation.XML",
+        "lib/net47/zxing.presentation.dll",
+        "lib/net48/zxing.XML",
+        "lib/net48/zxing.dll",
+        "lib/net48/zxing.presentation.XML",
+        "lib/net48/zxing.presentation.dll",
+        "lib/net5.0/zxing.XML",
+        "lib/net5.0/zxing.dll",
+        "lib/net6.0/zxing.XML",
+        "lib/net6.0/zxing.dll",
+        "lib/net7.0/zxing.XML",
+        "lib/net7.0/zxing.dll",
+        "lib/netcoreapp3.0/zxing.dll",
+        "lib/netcoreapp3.0/zxing.xml",
+        "lib/netcoreapp3.1/zxing.dll",
+        "lib/netcoreapp3.1/zxing.xml",
+        "lib/netstandard1.0/zxing.dll",
+        "lib/netstandard1.0/zxing.xml",
+        "lib/netstandard1.1/zxing.dll",
+        "lib/netstandard1.1/zxing.xml",
+        "lib/netstandard1.3/zxing.dll",
+        "lib/netstandard1.3/zxing.xml",
+        "lib/netstandard2.0/zxing.dll",
+        "lib/netstandard2.0/zxing.xml",
+        "lib/netstandard2.1/zxing.dll",
+        "lib/netstandard2.1/zxing.xml",
+        "lib/portable-win+net40+sl4+sl5+wp7+wp71+wp8/zxing.portable.XML",
+        "lib/portable-win+net40+sl4+sl5+wp7+wp71+wp8/zxing.portable.dll",
+        "lib/sl3-wp/zxing.wp7.0.XML",
+        "lib/sl3-wp/zxing.wp7.0.dll",
+        "lib/sl4-wp71/zxing.wp7.1.XML",
+        "lib/sl4-wp71/zxing.wp7.1.dll",
+        "lib/sl4/zxing.sl4.XML",
+        "lib/sl4/zxing.sl4.dll",
+        "lib/sl5/zxing.sl5.XML",
+        "lib/sl5/zxing.sl5.dll",
+        "lib/uap10/zxing.dll",
+        "lib/uap10/zxing.pri",
+        "lib/uap10/zxing.xml",
+        "lib/windows8-managed/zxing.winrt.XML",
+        "lib/windows8-managed/zxing.winrt.dll",
+        "lib/windows8/zxing.XML",
+        "lib/windows8/zxing.pri",
+        "lib/windows8/zxing.winmd",
+        "lib/wp8/zxing.wp8.0.XML",
+        "lib/wp8/zxing.wp8.0.dll",
+        "logo.jpg",
+        "zxing.net.0.16.9.nupkg.sha512",
+        "zxing.net.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net7.0-android33.0": [
+      "Camera.MAUI >= 1.4.3",
+      "CommunityToolkit.Maui >= 5.1.0",
       "CommunityToolkit.Mvvm >= 8.2.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -31933,6 +33255,8 @@
       "Xamarin.Google.Crypto.Tink.Android >= 1.7.0.1"
     ],
     "net7.0-ios16.1": [
+      "Camera.MAUI >= 1.4.3",
+      "CommunityToolkit.Maui >= 5.1.0",
       "CommunityToolkit.Mvvm >= 8.2.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -31945,6 +33269,8 @@
       "Realm >= 11.0.0"
     ],
     "net7.0-maccatalyst16.1": [
+      "Camera.MAUI >= 1.4.3",
+      "CommunityToolkit.Maui >= 5.1.0",
       "CommunityToolkit.Mvvm >= 8.2.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -32006,6 +33332,14 @@
       "net7.0-android33.0": {
         "targetAlias": "net7.0-android",
         "dependencies": {
+          "Camera.MAUI": {
+            "target": "Package",
+            "version": "[1.4.3, )"
+          },
+          "CommunityToolkit.Maui": {
+            "target": "Package",
+            "version": "[5.1.0, )"
+          },
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.2.0, )"
@@ -32140,6 +33474,14 @@
       "net7.0-ios16.1": {
         "targetAlias": "net7.0-ios",
         "dependencies": {
+          "Camera.MAUI": {
+            "target": "Package",
+            "version": "[1.4.3, )"
+          },
+          "CommunityToolkit.Maui": {
+            "target": "Package",
+            "version": "[5.1.0, )"
+          },
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.2.0, )"
@@ -32219,6 +33561,14 @@
       "net7.0-maccatalyst16.1": {
         "targetAlias": "net7.0-maccatalyst",
         "dependencies": {
+          "Camera.MAUI": {
+            "target": "Package",
+            "version": "[1.4.3, )"
+          },
+          "CommunityToolkit.Maui": {
+            "target": "Package",
+            "version": "[5.1.0, )"
+          },
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.2.0, )"

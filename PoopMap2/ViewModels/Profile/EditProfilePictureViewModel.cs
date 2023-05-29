@@ -10,14 +10,23 @@ namespace PoopMap2.ViewModels.Profile
 		[ObservableProperty]
 		public ImageSource profilePic;
 
-		[ObservableProperty]
+        [ObservableProperty]
 		public Camera.MAUI.CameraView cameraView;
+
+		[RelayCommand]
+		public void OnAppearing()
+		{
+			string base64pic = DAO.GetUserById(RealmService.CurrentUser.Id).ProfilePic;
+			ProfilePic = PhotoService.ConvertBase64ToImageSource(base64pic);
+			OnPropertyChanged();
+		}
 
 		[RelayCommand]
 		public async Task UpdateProfilePic(string imageStr)
 		{
 			IsBusy = true;
             await DAO.UpdateProfilePic(imageStr, RealmService.CurrentUser.Id);
+			OnAppearing();
 			IsBusy = false;
         }
 

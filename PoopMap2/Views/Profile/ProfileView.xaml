@@ -9,7 +9,7 @@
         <ToolbarItem IconImageSource="search.png" Command="{Binding SearchCommand}"/>
     </ContentPage.ToolbarItems>
 
-        <ContentPage.Behaviors>
+    <ContentPage.Behaviors>
         <toolkit:EventToCommandBehavior
             EventName="Appearing"
             Command="{Binding AppearingCommand}"/>
@@ -33,9 +33,24 @@
         </Grid.ColumnDefinitions>
 
 
-        <StackLayout>
-            <Image Source="{Binding ProfilePic}" HeightRequest="100"/>
-        </StackLayout>
+        <Border
+            WidthRequest="100"
+            HeightRequest="100"
+            StrokeShape="RoundRectangle 50"
+            Grid.RowSpan="2"
+            Grid.Column="0"
+
+               >
+            <Border.Shadow> <Shadow  Brush="Black" Offset="-10,20" Radius="70" Opacity="0.4" /> </Border.Shadow>
+            <Grid ColumnDefinitions="*" RowDefinitions="*">
+                <Image Source="{Binding ProfilePic}"
+                   Aspect="AspectFill"
+                   Grid.Column="0" Grid.Row="0"
+                   />
+            </Grid>
+
+
+        </Border>
 
         <Label FontSize="18" Text="{Binding Username}" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="20, 10, 0, 0"/>
 
@@ -58,7 +73,7 @@
             <StackLayout.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding Following_ClickedCommand}"/>
             </StackLayout.GestureRecognizers>
-            
+
             <Label Text="{Binding Following}" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center"/>
             <Label Text="Following" HorizontalOptions="Center"/>
         </StackLayout>

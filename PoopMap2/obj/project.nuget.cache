@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "itvgzT4BpzV12ZW0xY5q2/1V8l77nYNopST05HcjnXBxr3cwX+sj+ywWbynPaujc5heKEGoFZ1JbbYh8SDvzPw==",
+  "dgSpecHash": "t4VrmFZD9NmYJx7AW3VRhcxCeUVln8dXxqAwdcYYSSuIJb2D3Xq49ECIguYTcl6BDZPTLVm8a4YKEWtACBCDmw==",
   "success": true,
   "projectFilePath": "/Users/luberdoodle/Projects/PoopMap2/PoopMap2/PoopMap2.csproj",
   "expectedPackageFiles": [
+    "/Users/luberdoodle/.nuget/packages/camera.maui/1.4.3/camera.maui.1.4.3.nupkg.sha512",
+    "/Users/luberdoodle/.nuget/packages/communitytoolkit.maui/5.1.0/communitytoolkit.maui.5.1.0.nupkg.sha512",
+    "/Users/luberdoodle/.nuget/packages/communitytoolkit.maui.core/5.1.0/communitytoolkit.maui.core.5.1.0.nupkg.sha512",
     "/Users/luberdoodle/.nuget/packages/communitytoolkit.mvvm/8.2.0/communitytoolkit.mvvm.8.2.0.nupkg.sha512",
     "/Users/luberdoodle/.nuget/packages/fody/6.7.0/fody.6.7.0.nupkg.sha512",
     "/Users/luberdoodle/.nuget/packages/googlegson/2.9.1.1/googlegson.2.9.1.1.nupkg.sha512",
@@ -156,7 +159,8 @@
     "/Users/luberdoodle/.nuget/packages/xamarin.kotlin.stdlib.jdk7/1.7.20.1/xamarin.kotlin.stdlib.jdk7.1.7.20.1.nupkg.sha512",
     "/Users/luberdoodle/.nuget/packages/xamarin.kotlin.stdlib.jdk8/1.7.20.1/xamarin.kotlin.stdlib.jdk8.1.7.20.1.nupkg.sha512",
     "/Users/luberdoodle/.nuget/packages/xamarin.kotlinx.coroutines.android/1.6.4.1/xamarin.kotlinx.coroutines.android.1.6.4.1.nupkg.sha512",
-    "/Users/luberdoodle/.nuget/packages/xamarin.kotlinx.coroutines.core.jvm/1.6.4.1/xamarin.kotlinx.coroutines.core.jvm.1.6.4.1.nupkg.sha512"
+    "/Users/luberdoodle/.nuget/packages/xamarin.kotlinx.coroutines.core.jvm/1.6.4.1/xamarin.kotlinx.coroutines.core.jvm.1.6.4.1.nupkg.sha512",
+    "/Users/luberdoodle/.nuget/packages/zxing.net/0.16.9/zxing.net.0.16.9.nupkg.sha512"
   ],
   "logs": []
 }

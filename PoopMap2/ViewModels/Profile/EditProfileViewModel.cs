@@ -11,50 +11,25 @@ namespace PoopMap2.ViewModels.Profile
 	public partial class EditProfileViewModel : BaseViewModel
 	{
 
+		[ObservableProperty]
+		public ImageSource profilePic;
 
 		[ObservableProperty]
-		public string text = "Welcome!";
-
+		public string username;
 
 		[RelayCommand]
+		public void OnAppearing()
+		{
+			var thisUser = DAO.GetUserById(RealmService.CurrentUser.Id);
+			ProfilePic = PhotoService.ConvertBase64ToImageSource(thisUser.ProfilePic);
+			Username = thisUser.Username;
+		}
+
+        [RelayCommand]
 		public async Task Profile_Clicked()
 		{
 			await Shell.Current.GoToAsync($"{nameof(EditProfilePictureView)}");
 		}
-
-
-
-		//[RelayCommand]
-		//public async Task ChangeImage_Clicked()
-		//{
-  //          byte[] bytes = null;
-  //          if (MediaPicker.Default.IsCaptureSupported)
-  //          {
-  //              FileResult photo = await MediaPicker.Default.CapturePhotoAsync();
-
-  //              if (photo != null)
-  //              {
-  //                  IImage image;
-  //                  using(Stream stream = await photo.OpenReadAsync())
-  //                  {
-  //                      image = PlatformImage.FromStream(stream);
-  //                  }
-
-
-  //                  //convert image to bytes
-  //                  bytes = await PhotoService.ConvertImageToBytes(photo);
-  //              }
-  //          }
-
-  //          if (bytes != null)
-  //          {
-  //              // convert bytes to imagesource
-  //              ImageSource imgSource = PhotoService.ConvertBytesToImage(bytes);
-
-
-  //          }
-  //      }
-
 
     }
 }
